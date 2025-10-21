@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YC Companies - BASES x Garry Tan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #ff6600 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .company-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .company-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a202c;
+        }
+
+        .batch-tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .links {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .link-btn {
+            padding: 6px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .link-btn:hover {
+            opacity: 0.8;
+        }
+
+        .website-link {
+            background: #48bb78;
+            color: white;
+        }
+
+        .yc-link {
+            background: #ed8936;
+            color: white;
+        }
+
+        .description {
+            color: #4a5568;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .no-batch {
+            background: #a0aec0;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YC Companies Coming to BASES × Garry Tan</h1>
+            <p class="subtitle">Wednesday, October 22nd</p>
+        </header>
+
+        <div class="companies-grid">
+            <!-- SigNoz - W21 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">SigNoz</h2>
+                    <span class="batch-tag">W21</span>
+                </div>
+                <div class="links">
+                    <a href="https://signoz.io/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/signoz" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">SigNoz is an open source observability platform based natively on OpenTelemetry with metrics, traces, logs in a single pane. We have 23K+ github stars and 6k+ members in our slack community. 350+ paying customers. Users form 30+ countries use SigNoz. Roles hiring for - Forward Deployed Engineer, DevRel Engineer</p>
+            </div>
+
+            <!-- Industrial Next - W22 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Industrial Next</h2>
+                    <span class="batch-tag">W22</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.industrialnext.ai" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/industrial-next" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">Industrial Next is building the "autopilot for the factory": high-dexterity AI robot workstations that perceive, plan, and act to automate complex assembly in real customer lines. We're hiring intern/new-grad SWE/ML/Robotics to ship PyTorch-based perception, planning, and control systems, simulation tools, and data engines used in production with the largest electronics manufacturers in the world. You'll work in the Bay Area on real hardware and see your code run on robots within hours.</p>
+            </div>
+
+            <!-- Navier AI - W24 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Navier AI</h2>
+                    <span class="batch-tag">W24</span>
+                </div>
+                <div class="links">
+                    <a href="http://navier.ai/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/navier-ai" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">At Navier AI (W24), we're building next-generation tools for autonomous code generation and developer intelligence. We're currently hiring frontend, backend, and generalist engineers (both interns and new grads) who are excited about solving challenging problems at the intersection of AI and systems engineering.</p>
+            </div>
+
+            <!-- Fazeshift - S24 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Fazeshift</h2>
+                    <span class="batch-tag">S24</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.fazeshift.com/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/fazeshift" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">Fazeshift (YC S24) is an AI agent for Accounts Receivable - built by two Harvard & MIT founders, we've raised $7M to date from YC and Gradient (Google's dedicated AI fund). We're looking for exceptional software engineers to join the team and build at the forefront of AI agents for enterprise companies. Reach out to caitlin@fazeshift.com for more info.</p>
+            </div>
+
+            <!-- MangoDesk - S25 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">MangoDesk</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.mangodesk.com/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/mangodesk" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">MangoDesk is hiring exceptional software engineers, researchers, and operators. We're a technical team with experience from Scale AI, Uber, and previously founding a successful 7-figure AI company. We recently raised an oversubscribed seed round led by top-tier VCs. Our mission is to bridge the gap between AI and the $5T knowledge work economy through RL, data, and evals.</p>
+            </div>
+
+            <!-- Nixo - S25 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Nixo</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://withnixo.com/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/nixo" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">Nixo is building infrastructure for the secret weapon behind every great AI company: forward deployed engineers. They're the ones who turn AI prototypes into real customer wins, but right now, they're doing it with duct tape and Notion docs. Nixo is changing that by giving FDEs the tools to make scaling customer deployments fast, organized, and repeatable. We're building for the most versatile engineers in the world, and we hire the same way. People who can go from systems thinking to storytelling in a single conversation will thrive at Nixo. We just raised a seed round and now we're looking for an AI Engineering Intern and a Head of Ops, but if you're a smart person who's equally bullish about the Nixo vision, we'll always be willing to make a role for you here.</p>
+            </div>
+
+            <!-- Sixtyfour - X25 - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Sixtyfour</h2>
+                    <span class="batch-tag">X25</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.sixtyfour.ai/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/sixtyfour" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">Our company Sixtyfour finds and enriches people's data at scale, not dissimilar to Clay. We're looking for talented Data Scientists, Full Stack engineers with a key sense of design, people with deep UX experience, and people with knowledge on how to scale systems. We raised $4.2mm led by Foundation Capital, did YC X25, and currently revenue is around $25k/month.</p>
+            </div>
+
+            <!-- Proximal - No batch - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Proximal</h2>
+                    <span class="batch-tag no-batch">—</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.proximalai.com/" class="link-btn website-link" target="_blank">Website</a>
+                </div>
+                <p class="description">We're building RL training gyms for coding agents and selling to frontier labs like Anthropic, xAI, and Meta. Our founding team consists of the 2nd founding engineer/researcher at Cursor and the RL research lead at Prime Intellect, and are also second-time YC founders with prior successful exits. We raised a $10M seed round from General Catalyst and angel investors from OpenAI, Anthropic, xAI, Google Deepmind and Thinking Machines.</p>
+            </div>
+
+            <!-- Galen - No batch - Full info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Galen</h2>
+                    <span class="batch-tag no-batch">—</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.galenai.com/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/galen-ai" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">Galen is building the future of proactive, personalized healthcare. By integrating clinical and wearable data, we deliver real-time insights, tailored health recommendations, and 24/7 on-demand medical support, empowering users to be proactive about their health and wellness. We are backed by leading physicians and researchers from Stanford and the Cleveland Clinic and investors from YC and Maven Ventures. We are hiring for founding engineers (SWE/ML) and designers/content creators.</p>
+            </div>
+
+            <!-- Prufold Labs - No batch - Description only -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Prufold Labs</h2>
+                    <span class="batch-tag no-batch">—</span>
+                </div>
+                <p class="description">Prufold Labs is building the trust layer for AI and robotics — solving one of the biggest technical challenges of our time: making intelligent systems provably secure. We combine formal methods, language tooling, and machine learning to build a platform where every decision and action can be verified. We're looking for exceptional engineers and researchers excited by ML, compilers, and secure systems to help shape the foundation of trustworthy AI.</p>
+            </div>
+
+            <!-- Friday - No batch - Partial info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Friday</h2>
+                    <span class="batch-tag no-batch">—</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.friday.so" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/friday" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+                <p class="description">At Friday, we're hiring founding engineers. We're building a Chrome Extension to completely automate Gmail using AI.</p>
+            </div>
+
+            <!-- Bevelmade - No batch - Partial info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Bevelmade</h2>
+                    <span class="batch-tag no-batch">—</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.bevelmade.com" class="link-btn website-link" target="_blank">Website</a>
+                </div>
+                <p class="description">Started off as an AI community tool to help fire survivors document all their personal property after the LA fires but has since grown into a tool insurance companies are paying for.</p>
+            </div>
+
+            <!-- Prompting Company - S25 - Description only -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Prompting Company</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <p class="description">We help products get mentioned in ChatGPT. We're currently hiring founding engineers.</p>
+            </div>
+
+            <!-- S25 companies with minimal info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Burnt</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://getburnt.ai/" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/burnt" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Keystone</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://withkeystone.com" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/keystone" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Metis</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://withmetis.ai" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/metis" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Convexia</h2>
+                    <span class="batch-tag">S25</span>
+                </div>
+                <div class="links">
+                    <a href="https://convexia.bio" class="link-btn website-link" target="_blank">Website</a>
+                    <a href="https://www.ycombinator.com/companies/convexia" class="link-btn yc-link" target="_blank">YC Page</a>
+                </div>
+            </div>
+
+            <!-- Other batches with minimal info -->
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Mantle Work</h2>
+                    <span class="batch-tag">F25</span>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <h2 class="company-name">Text AI</h2>
+                    <span class="batch-tag">X25</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Looking forward to seeing you at the event! 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
